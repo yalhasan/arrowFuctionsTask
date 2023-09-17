@@ -36,5 +36,5 @@ const squareArray = (array) => {
     return newArray;
 }
 
-//test = [1, 2, 3, 4];
-//console.log(squareArray(test));
+test = [1, 2, 3, 4];
+console.log(squareArray(test));
