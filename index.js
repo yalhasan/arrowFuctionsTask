@@ -36,5 +36,22 @@ const squareArray = (array) => {
     return newArray;
 }
 
-test = [1, 2, 3, 4];
-console.log(squareArray(test));
+//test = [1, 2, 3, 4];
+//console.log(squareArray(test));
+
+//bonus Question
+function arrayIntersection(arr1, arr2) {
+    let arr3=[];
+    for(i=0; i<arr1.length; i++){
+        if(arr2.includes(arr1[i])){
+            if(!arr3.includes(arr1[i]))
+                arr3.push(arr1[i]);
+        }
+    }
+    return arr3;
+  }
+  
+  // Example usage:
+  const array1 = [1, 2, 3, 4, 5, 3];
+  const array2 = [3, 4, 5, 6, 7];
+  console.log(arrayIntersection(array1, array2)); // Should output [3, 4, 5]
